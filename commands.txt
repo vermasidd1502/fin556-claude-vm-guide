@@ -1,0 +1,29 @@
+CLAUDE CODE ON THE FIN556 LAB VM: commands to paste (in the VM terminal, through Guacamole)
+
+1) Install
+curl -fsSL https://claude.ai/install.sh | bash
+
+2) Add to PATH and check the version
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc && claude --version
+
+3) Start and log in (first time only)
+claude
+/login
+   -> open the link in the VM's browser, sign in, paste the code back
+
+4) Put the rules file in your project folder (after uploading CLAUDE.md through Guacamole > Devices)
+mkdir -p ~/myproject && mv ~/CLAUDE.md ~/myproject/ && cd ~/myproject && claude
+
+5) Daily use
+cd ~/myproject && claude
+
+6) Useful commands inside Claude
+/clear    start fresh between tasks
+/cost     see usage
+/model    switch model
+/logout   log out
+
+7) When the project is done (after /logout)
+rm -rf ~/myproject ~/.claude ~/.local/share/claude ~/.local/bin/claude
+
+Use at your own risk: you are responsible for your agent's actions, the course and data rules, and your own usage.
