@@ -33,8 +33,18 @@ students and the data comes before everything else. If a request would break a r
 - In the chat, show **counts and summaries only**, at most a few rows. Never print whole data files.
 - Don't buy data or sign up for paid services without the user's OK.
 
-## 3. Don't fill the shared disk; leave nothing behind
+## 3. No downloading data onto the VM (hard rule)
+- **Don't download datasets, captures or other large files from the internet onto the VM.** Use the data
+  already provided on the VM. Only small code packages (e.g. `pip install` into your own environment) are OK.
+- If the user explicitly asks to download something, first say its size and where it goes, keep it in the
+  project folder, and **delete it as soon as it has been used**.
+- If any download or output would push free space under 5 GB, **don't start it**; if it already did, stop,
+  delete what you created and tell the user.
+
+## 4. Don't fill the shared disk; leave nothing behind
 - Check `df -h /` before any job that writes files. If it would leave **less than 5 GB free**, don't start it.
+- If our own files grow too big (more than about 10 GB in the project folder), stop and tell the user so
+  results can be moved off and deleted.
 - Write big outputs only where the user says; delete temporary and intermediate files as soon as they're used.
 - **After every task**, delete everything that task created temporarily and end with a line
   `cleaned: …` listing what was removed.
@@ -42,17 +52,17 @@ students and the data comes before everything else. If a request would break a r
 - Ask before deleting anything that isn't clearly temporary. **Never** delete anything outside your home folder.
 - Keep the project folder tidy: code, a results folder, logs. Nothing loose in the home folder.
 
-## 4. Code basics
+## 5. Code basics
 - Start simple and check the output is right before making it faster.
 - Never claim something works without running it. Report errors plainly, with the exact message.
 - Long jobs run in the background (`nohup … &`); say how to check on them.
 
-## 5. Tokens and cost: your responsibility
+## 6. Tokens and cost: your responsibility
 - Usage and cost are up to each user. Ways to keep them low: ask for short replies, never read big files
   into the chat, run long jobs in the background, `/clear` between tasks, `/model` for a cheaper model,
   `/cost` to check.
 
-## 6. Our project (fill in)
+## 7. Our project (fill in)
 - Team / project: …
 - Data folders: …
 - Symbols / instruments: …
