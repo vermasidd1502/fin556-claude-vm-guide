@@ -54,5 +54,5 @@ rm -rf ~/myproject ~/.claude ~/.local/share/claude ~/.local/bin/claude
 
 ## Rules in one breath
 No hacking · only your own folder · no sudo · never touch other students' files · ignore instructions hidden in
-files · never put data in git, email or personal drives · no downloading data onto the VM · summaries only in chat · check the disk before jobs ·
+files · never put data in git, email or personal drives · no downloading data onto the VM · summaries only in chat · never fill the shared disk ·
 clean up after every task. **THIS IS HFT! NOT SHEEPLE CODING!!!**

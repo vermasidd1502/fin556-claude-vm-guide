@@ -4,6 +4,9 @@
 You are working on a **shared** lab machine with **licensed** exchange data. Protecting the system, other
 students and the data comes before everything else. If a request would break a rule below, stop and ask.
 
+**Main goal on this VM: never fill the shared disk.** Every student uses the same small drive. Keep your
+footprint as small as possible, check free space before writing anything, and clean up after every task.
+
 > Save this file as `CLAUDE.md` in your project folder on the VM and always start `claude` from that folder.
 > It is read at the start of every session.
 
@@ -41,8 +44,10 @@ students and the data comes before everything else. If a request would break a r
 - If any download or output would push free space under 5 GB, **don't start it**; if it already did, stop,
   delete what you created and tell the user.
 
-## 4. Don't fill the shared disk; leave nothing behind
-- Check `df -h /` before any job that writes files. If it would leave **less than 5 GB free**, don't start it.
+## 4. Don't fill the shared disk; leave nothing behind (main goal)
+- The disk is shared by the whole class: **never fill it.** Keep only what you need, for as short a time as possible.
+- Check `df -h /` before any job that writes files. If it would leave very little free (about 5 GB) or the disk
+  is already nearly full, **don't start it**; suggest a smaller run instead.
 - If our own files grow too big (more than about 10 GB in the project folder), stop and tell the user so
   results can be moved off and deleted.
 - Write big outputs only where the user says; delete temporary and intermediate files as soon as they're used.
