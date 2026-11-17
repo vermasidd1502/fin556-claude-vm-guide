@@ -10,6 +10,11 @@ A short guide to running the Claude Code agent inside the FIN556 lab VM (through
 |---|---|
 | [`CLAUDE.md`](CLAUDE.md) | Rules the agent reads every session: don't touch the system, don't leak the data, no downloading data, don't fill the disk, clean up after yourself. Fill in section 7. |
 | [`commands.txt`](commands.txt) | Every command to paste, in order. |
+| [`README_GEMINI.md`](README_GEMINI.md) · [`GEMINI.md`](GEMINI.md) | Same guide for **Google Gemini CLI**, with its rules file |
+| [`README_COPILOT.md`](README_COPILOT.md) · [`AGENTS.md`](AGENTS.md) | Same guide for **GitHub Copilot CLI** (free with GitHub Education) |
+| [`README_CODEX.md`](README_CODEX.md) · [`AGENTS.md`](AGENTS.md) | Same guide for **OpenAI Codex CLI** |
+
+All rules files say the same thing; only the file name changes for each tool.
 
 ---
 
