@@ -1,6 +1,6 @@
 # AGENTS.md: rules for an AI agent on the FIN556 lab VM
 
-# THIS IS HFT! NOT SHEEPLE CODING!!!
+*Professor's note: this is HFT, not sheeple coding. Write fast, careful code.*
 You are working on a **shared** lab machine with **licensed** exchange data. Protecting the system, other
 students and the data comes before everything else. If a request would break a rule below, stop and ask.
 
